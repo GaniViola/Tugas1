@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="81dp"
+        android:layout_height="71dp"
+        android:layout_marginTop="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@android:drawable/ic_menu_save" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="105dp"
+        android:layout_height="46dp"
+        android:gravity="center"
+        android:text="Biodata"
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <EditText
+        android:id="@+id/txtNamaLengkap"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="12dp"
+        android:ems="10"
+        android:inputType="text"
+        android:padding="12dp"
+        android:textColor="#707070"
+        android:textSize="18sp"
+        android:background="@drawable/edittxt_baground"
+        android:text="Nama Lengkap"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <EditText
+        android:id="@+id/txtUserName"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/edittxt_baground"
+        android:ems="10"
+        android:inputType="text"
+        android:padding="12dp"
+        android:text="Username"
+        android:textColor="#707070"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtNamaLengkap" />
+
+    <EditText
+        android:id="@+id/Tanggal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/edittxt_baground"
+        android:ems="10"
+        android:padding="12dp"
+        android:text="Tanggal Lahir"
+        android:textColor="#707070"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtUserName"
+        android:focusable="false"
+        android:clickable="true"
+        android:inputType="none"/>
+
+    <EditText
+        android:id="@+id/txtemail"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/edittxt_baground"
+        android:ems="10"
+        android:padding="12dp"
+        android:text="Email"
+        android:textColor="#707070"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Tanggal" />
+
+    <EditText
+        android:id="@+id/txtpwd"
+        android:inputType="textPassword"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/edittxt_baground"
+        android:ems="10"
+        android:padding="12dp"
+        android:text="Password"
+        android:textColor="#707070"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtemail" />
+
+    <EditText
+        android:id="@+id/txtkonfirmPwd"
+        android:inputType="textPassword"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/edittxt_baground"
+        android:ems="10"
+        android:padding="12dp"
+        android:text="Password"
+        android:textColor="#707070"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtpwd" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="112dp"
+        android:layout_height="23dp"
+        android:layout_marginTop="12dp"
+        android:text="Jenis kelamin : "
+        android:textColor="@color/black"
+        android:textSize="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtkonfirmPwd" />
+
+    <Spinner
+        android:id="@+id/spinnerGender"
+        android:layout_width="204dp"
+        android:layout_height="23dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="12dp"
+        app:layout_constraintStart_toEndOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/txtkonfirmPwd" />
+
+    <EditText
+        android:id="@+id/txtnohp"
+        android:inputType="number"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/edittxt_baground"
+        android:ems="10"
+        android:padding="12dp"
+        android:text="No hp"
+        android:textColor="#707070"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerGender" />
+
+    <EditText
+        android:id="@+id/txtalamat"
+        android:inputType="text"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/edittxt_baground"
+        android:ems="10"
+        android:padding="12dp"
+        android:text="Alamat"
+        android:textColor="#707070"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtnohp" />
+
+    <Button
+        android:id="@+id/Btnsub"
+        android:layout_width="149dp"
+        android:layout_height="53dp"
+        android:layout_marginBottom="24dp"
+        android:text="Button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtalamat"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/txtnama"
+        android:layout_width="100dp"
+        android:layout_height="26dp"
+        android:layout_marginBottom="16dp"
+        android:text="Nama"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.051"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
